@@ -12,7 +12,7 @@ import ChangePassword from './components/ChangePassword/ChangePassword'
 
 // import list components for CRUD
 import CreateItem from './components/list/CreateListItem/CreateItem.js'
-// import ListShowUser from './components/list/ShowUserList/ShowUserList.js'
+import ShowUserList from './components/list/ShowUserList/ShowUserList.js'
 
 class App extends Component {
   constructor (props) {
@@ -71,6 +71,9 @@ class App extends Component {
           )} />
           <AuthenticatedRoute user={user} path='/create-list-item' render={() => (
             <CreateItem msgAlert={this.msgAlert} user={user} />
+          )} />
+          <AuthenticatedRoute user={user} path='/index-user' render={() => (
+            <ShowUserList msgAlert={this.msgAlert} user={user} />
           )} />
         </main>
       </Fragment>

@@ -3,6 +3,7 @@ import axios from 'axios'
 
 // CREATE
 export const createListItem = (list, user) => {
+  // console.log('This is list', list)
   return axios({
     url: apiUrl + '/lists',
     method: 'POST',

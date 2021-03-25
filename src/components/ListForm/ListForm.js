@@ -36,7 +36,7 @@ const ListForm = ({ list, handleSubmit, handleChange }) => {
             <Form.Label>List Item</Form.Label>
             <Form.Control
               type="text"
-              name="producer"
+              name="text"
               placeholder="List Item"
               onChange={handleChange}
             />

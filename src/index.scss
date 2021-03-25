@@ -7,9 +7,10 @@ $warning: #ffddd2;
 @import '~bootstrap/scss/bootstrap';
 
 body {
-  background-color: #edf6f9;
+  background-image: linear-gradient(#22c1c3, #fdbb2d);
+  height: 700px;
 }
 
 button {
-  margin-left: 15px;
+  margin-right: 15px;
 }
