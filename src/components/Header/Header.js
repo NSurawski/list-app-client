@@ -1,13 +1,16 @@
 import React, { Fragment } from 'react'
 import Nav from 'react-bootstrap/Nav'
 import Navbar from 'react-bootstrap/Navbar'
+import NavDropdown from 'react-bootstrap/NavDropdown'
 
 const authenticatedOptions = (
   <Fragment>
-    <Nav.Link href="#create-list-item">Create List Item</Nav.Link>
-    <Nav.Link href="#index-user">My List</Nav.Link>
-    <Nav.Link href="#change-password">Change Password</Nav.Link>
-    <Nav.Link href="#sign-out">Sign Out</Nav.Link>
+    <NavDropdown title="Make Your List" id="basic-nav-dropdown">
+      <NavDropdown.Item href="#create-list-item">Create List Item</NavDropdown.Item>
+      <NavDropdown.Item href="#index-user">My List</NavDropdown.Item>
+      <NavDropdown.Item href="#change-password">Change Password</NavDropdown.Item>
+      <NavDropdown.Item href="#sign-out">Sign Out</NavDropdown.Item>
+    </NavDropdown>
   </Fragment>
 )
 
