@@ -4,6 +4,7 @@ import React, { Component } from 'react'
 
 import Card from 'react-bootstrap/Card'
 import Button from 'react-bootstrap/Button'
+import InputGroup from 'react-bootstrap/InputGroup'
 
 import { listIndexUser, listItemDelete } from './../../../api/list'
 
@@ -91,6 +92,7 @@ class ShowUserList extends Component {
     const listJsx = lists.map(list => (
       <Card key={list._id} style={{ width: '100%', marginTop: '10px' }}>
         <Card.Body>
+          <InputGroup.Checkbox aria-label="Checkbox for following text input" />
           <Card.Text>{list.text}</Card.Text>
           <Button variant="danger" onClick={() => this.handleDelete(list._id)}>
               Delete
