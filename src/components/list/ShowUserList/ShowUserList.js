@@ -90,7 +90,7 @@ class ShowUserList extends Component {
     // }
 
     const listJsx = lists.map(list => (
-      <Card key={list._id} style={{ width: '100%', marginTop: '10px' }}>
+      <Card key={list._id} style={{ width: '100%', marginTop: '10px', display: 'flex' }}>
         <Card.Body>
           <InputGroup.Checkbox aria-label="Checkbox for following text input" />
           <Card.Text>{list.text}</Card.Text>
